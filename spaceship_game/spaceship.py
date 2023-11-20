@@ -13,10 +13,10 @@ class Spaceship:
             self.rect_spaceship.x += 10
         if direction_spaceship == 'left':
             self.rect_spaceship.x -= 10
-        if self.rect_spaceship.left <= 80:
-            self.rect_spaceship.left = 80
-        if self.rect_spaceship.right >= Settings.SCREEN_WIDTH - 80:
-            self.rect_spaceship.right = Settings.SCREEN_WIDTH - 80
+        if self.rect_spaceship.left <= 5:
+            self.rect_spaceship.left = 5
+        if self.rect_spaceship.right >= Settings.SCREEN_WIDTH - 5:
+            self.rect_spaceship.right = Settings.SCREEN_WIDTH - 5
 
     def firing_spaceShip(self):
         return Fire(self.rect_spaceship.midtop, -1, 'spaceship')
